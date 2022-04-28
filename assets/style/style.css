@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@font-face {
+  font-family: 'FarFromHomecoming';
+  src: url('../Typo-FarFromHomecoming.woff2') format('woff2');
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: grid;
+  /* background: #000; */
+}
+
+header{
+  padding: 10px 120px;
+  /* padding: 10px 100px; */
+  display: flex;
+  background-color: #B11313;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+header .logo{
+  display: flex;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 300px; */
+}
+
+header .logo img{
+  /* width: 100%; */
+  margin-right: 10px;
+}
+
+header .logo .logo1{
+  width: 80%;
+}
+
+header .logo .logo2{
+  /* width: 100px; */
+  height: 20px;
+}
+
+header .logo .logo3{
+  width: 70%;
+}
+
+.topbar-options{
+  display: flex;
+  align-items: center;
+}
+
+.topbar-options ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.topbar-options li{
+  display: inline-block;
+  padding: 10px;
+}
+
+.topbar-options a{
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-content{
+  height: 100%;
+  background: url(../Illustration/img1.png);
+  /* background-position: left; */
+  background-repeat: no-repeat;
+  background-color: #B11313;
+  /* background-size: cover; */
+}
+
+.spider-title{
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 100px 120px;
+}
+
+.spider-title .title{
+  color: #FFF;
+  margin-bottom: 60px;
+}
+
+.btn{
+  border: 1px solid transparent;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #B11313;
+  background-color: #FFF;
+  border-radius: 1rem;
+  margin: 0px 20px 20px 0px;
+  transition: all 0.2s ease;
+}
+
+.active-off, .btn:hover{
+  color: #FFF;
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+
+.spider-title .subtitle-bold{
+  color: #FFF;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.all-spider{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  color: #FFF;
+  padding: 70px 120px;
+  /* background-color: #B11313; */
+}
+
+.description-spider{
+  margin-bottom: 30px;
+}
+
+.card-spiders{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card-spiders .card{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-basis: 15%;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.card .description p,
+.card .description li{
+  font-family: 'Montserrat';
+  font-size: 14px;
+  letter-spacing: 0.07rem;
+}
+
+.card .description li{
+  margin-left: 30px;
+}
+
+.card .btn{
+  width: 200px;
+  margin-top: auto;
+}
+
+.card img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card .description{
+  margin-bottom: 30px;
+}
+
+.form-spider{
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: padding-box;
+  background-color: #114C92;
+  background-image: url('../Illustration/img5.png');
+  height: 70vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 6%;
+  color: #FFF;
+}
+
+.title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-area{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.title-area .subtitle{
+  margin-bottom: 20px;
+}
+
+.form-spider .form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input{
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.form .btn{
+  width: 40%;
+  margin-top: 30px;
+}
+
+.title{
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'FarFromHomecoming';
+}
+
+.subtitle{
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+.newsletter-spider{
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: right;
+  /* background-origin: padding-box; */
+  background-size: 700px;
+  background-image: url('../Illustration/img6.png');
+  height: 70vh;
+  padding-left: 10%;
+}
+
+.newsletter-spider .title-area{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.form-newsletter .input{
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.form-newsletter .check-form{
+  margin-top: 15px;
+  padding-left: 7px;
+  width: 50%;
+}
+
+.form-newsletter .check-form label{
+  padding: 0px 20px;
+  text-align: left;
+}
+
+.btn-area{
+  margin-top: 30px;
+  padding-left: 50px;
+  width: 100%;
+}
